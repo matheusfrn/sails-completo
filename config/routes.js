@@ -18,10 +18,10 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-  "/": { view: "pages/homepage" },
-  "/pets": { view: "pages/pets" },
-  "/login": { view: "pages/login" },
-  "/sign-up": { view: "pages/create-user" },
+  "/": { view: "/homepage" },
+  "/pets": { view: "/pets" },
+  "/login": { view: "/login" },
+  "/sign-up": { view: "/create-user" },
   "/pet": "PetController.getPets",
   "POST /pets": "PetController.create",
   "POST /users": "UserController.login",
